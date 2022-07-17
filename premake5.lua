@@ -76,14 +76,15 @@ project "FreeImagePlus"
 	kind "StaticLib"
 	language "c++"
 	staticruntime "off"
+	characterset "MBCS"
     
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
     files
     {
-		"Warpper/FreeImagePlus/*.h",
-		"Warpper/FreeImagePlus/src/*.cpp",
+		"Wrapper/FreeImagePlus/*.h",
+		"Wrapper/FreeImagePlus/src/*.cpp",
     }
 	
 	removefiles
@@ -103,7 +104,7 @@ project "FreeImagePlus"
 
     includedirs
     {
-		"Warpper/FreeImagePlus",
+		"Wrapper/FreeImagePlus",
 		"Source",
     }
 	
