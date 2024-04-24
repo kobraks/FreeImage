@@ -1,3 +1,11 @@
+#VS files
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
+
 # Prerequisites
 *.d
 
